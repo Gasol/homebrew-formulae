@@ -1,14 +1,22 @@
 require "formula"
 
+class JarDownloadStrategy < NoUnzipCurlDownloadStrategy
+  def ext
+    ".jar"
+  end
+end
+
 class BurpsuiteFree < Formula
   homepage "http://portswigger.net/burp/"
-  version "1.6"
-  url "http://portswigger.net/burp/burpsuite_free_v#{version}.jar", :using => :nounzip
-  sha1 "017fdab9fb9dab2c214f0273b9f47195832824ae"
+  version "1.7.10"
+  url "https://portswigger.net/Burp/Releases/Download?productId=100&type=Jar&version=#{version}",
+	  :using => JarDownloadStrategy
+  sha256 "9f609d14d474f43c9261c920c4a868278cbac119fcee62a328274e093738378d"
 
   def install
-    jar_file = "burpsuite_free_v#{version}.jar"
-    libexec.install jar_file
+    jar_file = "burpsuite_free-#{version}.jar"
+
+    libexec.install cached_download
     bin.write_jar_script libexec/jar_file, "burp_suite"
   end
 end
