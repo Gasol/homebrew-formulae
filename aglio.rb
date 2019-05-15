@@ -7,9 +7,9 @@ class Aglio < Formula
   depends_on "node"
 
   devel do
-    url "https://github.com/Gasol/aglio/archive/e102cc7.tar.gz"
-    version "e102cc7"
-    sha256 "8e119f9f637f33b26bd566ed067a4c703994fafe9bc05b96733815769b77fd23"
+    url "https://github.com/Gasol/aglio/archive/333da5.tar.gz"
+    version "333da5"
+    sha256 "7952eccf8ee89a2a05e6a89160d855f377777132a5637782db369b84e4a35d64"
 
   end
 
