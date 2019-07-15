@@ -1,5 +1,7 @@
 # Gasol's Homebrew Tap
 
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://gasolwu.mit-license.org/)
+
 The repository contains a collection of Homebrew formulae for personal use.
 
 ## Synopsis
@@ -11,7 +13,7 @@ The repository contains a collection of Homebrew formulae for personal use.
 ### Updating
 
     brew update
-    
+
 ### List formulae
 
     brew search gasol/formulae
@@ -19,5 +21,7 @@ The repository contains a collection of Homebrew formulae for personal use.
 ### Install formulae
 
     brew install gasol/formulae/<formulae>
-   
 
+## License
+
+   [MIT License](LICENSE.md)
