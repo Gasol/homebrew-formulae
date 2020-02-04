@@ -19,10 +19,10 @@ class Gtkx3X11 < Formula
   depends_on "gsettings-desktop-schemas"
   depends_on "hicolor-icon-theme"
   depends_on "libepoxy-x11"
-  depends_on "pango"
+  depends_on "pango-xlib"
   depends_on :x11
 
-  conflicts_with "gtk+3"
+  keg_only :versioned_formula
 
   patch do
     url "https://gitlab.gnome.org/GNOME/gtk/commit/fa07007389c9662b654680464cf88d8894e4e64d.diff"
@@ -84,7 +84,7 @@ class Gtkx3X11 < Formula
     harfbuzz = Formula["harfbuzz"]
     libepoxy = Formula["libepoxy"]
     libpng = Formula["libpng"]
-    pango = Formula["pango"]
+    pango = Formula["pango-xlib"]
     pixman = Formula["pixman"]
     flags = %W[
       -I#{atk.opt_include}/atk-1.0
