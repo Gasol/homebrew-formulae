@@ -4,10 +4,10 @@ class AtSpi2Core < Formula
   url "https://github.com/GNOME/at-spi2-core/archive/AT_SPI2_CORE_2_34_0.tar.gz"
   sha256 "1ec82280e203276f61cc554f47c5abe0bc6f58851dc304b9d293929eaa80d44d"
 
+  depends_on "gobject-introspection" => :build
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
-  depends_on "gobject-introspection" => :build
   depends_on "dbus"
   depends_on "glib"
 
