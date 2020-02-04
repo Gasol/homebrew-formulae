@@ -3,7 +3,6 @@ class Gtkx3X11 < Formula
   homepage "https://gtk.org/"
   url "https://download.gnome.org/sources/gtk+/3.24/gtk+-3.24.12.tar.xz"
   sha256 "1384eba5614fed160044ae0d32369e3df7b4f517b03f4b1f24d383e528f4be83"
-  revision 1
 
   depends_on "at-spi2-atk" => :build
   depends_on "at-spi2-core" => :build
