@@ -12,11 +12,11 @@ class AtSpi2Core < Formula
   depends_on "glib"
 
   def install
-		mkdir "build" do
-			system "meson", "--prefix=#{prefix}", ".."
-			system "ninja"
-			system "ninja", "install"
-		end
+    mkdir "build" do
+      system "meson", "--prefix=#{prefix}", ".."
+      system "ninja"
+      system "ninja", "install"
+    end
   end
 
   test do
