@@ -5,12 +5,6 @@ class Gtkx3X11 < Formula
   sha256 "1384eba5614fed160044ae0d32369e3df7b4f517b03f4b1f24d383e528f4be83"
   revision 1
 
-  bottle do
-    sha256 "4ccac8c178075606f275a258c215d6b805e184335306d9a78cd4b7c7fbf4a13b" => :catalina
-    sha256 "5198ebdb8d360fbc1d70b980f99b189348db793aa7a694c79cd7445f2ed7e6dd" => :mojave
-    sha256 "23682d476062f2ca5324f2ba584f44712b4d3264c1c9b70d452fead937a77346" => :high_sierra
-  end
-
   depends_on "at-spi2-atk" => :build
   depends_on "at-spi2-core" => :build
   depends_on "dbus" => :build

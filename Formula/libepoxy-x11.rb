@@ -5,13 +5,6 @@ class LibepoxyX11 < Formula
   sha256 "0bd2cc681dfeffdef739cb29913f8c3caa47a88a451fd2bc6e606c02997289d2"
   head "https://github.com/anholt/libepoxy"
 
-  bottle do
-    cellar :any
-    sha256 "96e139bc93053e6bb0a03201169e16c6112ef0ab27cdc648d35a26f2d786855c" => :catalina
-    sha256 "c2f968269360ad31b30d6635d234cdc82e926fd109f3ac3aa4eb2a71f27f3ceb" => :mojave
-    sha256 "3ed4dbf8d3715738c5226c0466b7ace7a57b4a49dc838d3260d5d8acd82c1a07" => :high_sierra
-  end
-
   depends_on "meson" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
