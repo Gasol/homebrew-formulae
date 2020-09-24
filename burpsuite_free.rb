@@ -14,9 +14,9 @@ class BurpsuiteFree < Formula
   sha256 "9f609d14d474f43c9261c920c4a868278cbac119fcee62a328274e093738378d"
 
   def install
-    jar_file = "burpsuite_free-#{version}.jar"
+    jar_file = "#{name}_v#{version}.jar"
 
-    libexec.install cached_download
+    libexec.install jar_file
     bin.write_jar_script libexec/jar_file, "burp_suite"
   end
 end
